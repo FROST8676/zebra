@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zebra Car Repairing Shop</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .intro p {
+            text-align: center;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 40px;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .contact-info h2, .form-section h2 {
+            margin-bottom: 20px;
+        }
+        .form-section {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+        input, textarea {
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2), -3px -3px 8px rgba(255, 255, 255, 0.9);
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #000;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3), -3px -3px 15px rgba(255, 255, 255, 0.9);
+            transform: scale(1.02) translateY(-3px);
+        }
+        button {
+            padding: 15px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2), -3px -3px 8px rgba(255, 255, 255, 0.9);
+        }
+        button:hover {
+            background-color: #444;
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px 0;
+            background-color: #000;
+            color: #fff;
+        }
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .intro p {
+                font-size: 1em;
+            }
+            input, textarea {
+                font-size: 1em;
+                padding: 12px;
+            }
+            button {
+                font-size: 1em;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Zebra Car Repairing Shop</h1>
+    <p>Expert Solutions for All Car Models</p>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <h1>Welcome to Zebra Car Repairing Shop</h1>
+        <p>We offer top-tier car repair services tailored to your specific car model. From minor fixes to major overhauls, we’ve got you covered!</p>
+    </section>
+
+    <section class="contact-info">
+        <h2>Contact Us</h2>
+        <p>Phone 1: +91  99144 97102</p>
+        <p>Phone 2: +91 666666666</p>
+        <p>Email: info@zebracarrepair.com</p>
+    </section>
+
+    <section class="form-section">
+        <h2>Request a Quote for Your Car Repair</h2>
+        <form action="#" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="car-model">Car Model</label>
+            <input type="text" id="car-model" name="car-model" placeholder="e.g., Toyota Corolla" required>
+
+            <label for="issue">Describe the Issue</label>
+            <textarea id="issue" name="issue" rows="4" placeholder="Describe the issue with your car" required></textarea>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Zebra Car Repairing Shop. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
